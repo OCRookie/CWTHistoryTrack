@@ -1,0 +1,23 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - GitHistorySpaceLib (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - GitHistorySpaceLib (from `../`)
+
+EXTERNAL SOURCES:
+  GitHistorySpaceLib:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  GitHistorySpaceLib: d1c4c02dbf2e49d48fb2e61e35d052b5f8ede724
+
+PODFILE CHECKSUM: de67688b26cdd96a9af616ddf7aac114a060f37b
+
+COCOAPODS: 1.2.0
