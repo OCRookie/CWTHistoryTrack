@@ -1,9 +1,9 @@
 {
   "name": "GitHistorySpaceLib",
   "version": "0.1.0",
-  "summary": "A short description of GitHistorySpaceLib.",
+  "summary": "初始化历史轨迹",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/isoftstone/GitHistorySpaceLib",
+  "homepage": "https://github.com/OCRookie/CWTHistoryTrack.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,19 @@
     "isoftstone": "921468573@qq.com"
   },
   "source": {
-    "git": "https://github.com/isoftstone/GitHistorySpaceLib.git",
+    "git": "https://github.com/OCRookie/CWTHistoryTrack.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "GitHistorySpaceLib/Classes/**/*"
+  "source_files": "GitHistorySpaceLib/Classes/**/*",
+  "dependencies": {
+    "XCWSAppKitLib": [
+
+    ],
+    "BaiduMapKit": [
+
+    ]
+  }
 }

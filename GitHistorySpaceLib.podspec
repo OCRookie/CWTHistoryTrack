@@ -37,8 +37,8 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-   s.dependency 'XCWSAppKitLib'
+    s.dependency 'XCWSAppKitLib'
     s.dependency  'BaiduMapKit'
 end

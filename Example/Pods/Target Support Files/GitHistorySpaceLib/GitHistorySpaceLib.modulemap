@@ -1,6 +1,0 @@
-framework module GitHistorySpaceLib {
-  umbrella header "GitHistorySpaceLib-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,8 +1,10 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/GitHistorySpaceLib"
+CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/BaiduMapKit/BaiduMapKit"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/GitHistorySpaceLib/GitHistorySpaceLib.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "GitHistorySpaceLib"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/BaiduMapKit" "${PODS_ROOT}/Headers/Public/BlocksKit" "${PODS_ROOT}/Headers/Public/GitHistorySpaceLib" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/XCWSAppKitLib"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/BlocksKit" "$PODS_CONFIGURATION_BUILD_DIR/GitHistorySpaceLib" "$PODS_CONFIGURATION_BUILD_DIR/SDWebImage" "$PODS_CONFIGURATION_BUILD_DIR/XCWSAppKitLib" $(inherited) "${PODS_ROOT}/BaiduMapKit/BaiduMapKit/thirdlibs"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/BaiduMapKit" -isystem "${PODS_ROOT}/Headers/Public/BlocksKit" -isystem "${PODS_ROOT}/Headers/Public/GitHistorySpaceLib" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage" -isystem "${PODS_ROOT}/Headers/Public/XCWSAppKitLib"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"BlocksKit" -l"GitHistorySpaceLib" -l"SDWebImage" -l"XCWSAppKitLib" -l"c++" -l"crypto" -l"sqlite3.0" -l"ssl" -framework "BaiduMapAPI_Base" -framework "BaiduMapAPI_Cloud" -framework "BaiduMapAPI_Location" -framework "BaiduMapAPI_Map" -framework "BaiduMapAPI_Radar" -framework "BaiduMapAPI_Search" -framework "BaiduMapAPI_Utils" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreTelephony" -framework "ImageIO" -framework "MessageUI" -framework "MobileCoreServices" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods

@@ -1,11 +1,14 @@
-use_frameworks!
-
+#use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+#source "https://gitee.com/cqjtu/ModuleSpace.git"
+#source "https://github.com/joshiaProgram/ModularizationTestSpec.git"
+source "http://172.19.0.9:10080/XCWSModularization/XCWSSpecRepo.git"
 target 'GitHistorySpaceLib_Example' do
   pod 'GitHistorySpaceLib', :path => '../'
+ #pod 'GitHistorySpaceLib',:podspec => '../GitHistorySpaceLib.podspec'
+ # target 'GitHistorySpaceLib_Tests' do
+ #  inherit! :search_paths
 
-  target 'GitHistorySpaceLib_Tests' do
-    inherit! :search_paths
-
-    pod 'FBSnapshotTestCase'
-  end
+#   pod 'FBSnapshotTestCase'
+#  end
 end

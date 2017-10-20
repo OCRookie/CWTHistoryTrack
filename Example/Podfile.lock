@@ -1,13 +1,47 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - GitHistorySpaceLib (0.1.0)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BaiduMapKit (3.4.2)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - GitHistorySpaceLib (0.1.0):
+    - BaiduMapKit
+    - XCWSAppKitLib
+  - SDWebImage (4.1.2):
+    - SDWebImage/Core (= 4.1.2)
+  - SDWebImage/Core (4.1.2)
+  - XCWSAppKitLib (0.1.0):
+    - AFNetworking
+    - BlocksKit
+    - SDWebImage
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - GitHistorySpaceLib (from `../`)
 
 EXTERNAL SOURCES:
@@ -15,9 +49,13 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  GitHistorySpaceLib: d1c4c02dbf2e49d48fb2e61e35d052b5f8ede724
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BaiduMapKit: f61b19ecf07a3f2deede72b221b366bf698739ed
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  GitHistorySpaceLib: 1977d6bf6d35d4798b66a9d846931c6aa0d9b162
+  SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
+  XCWSAppKitLib: 17ebd74e0bfa3614e14a02678a36ceaa839f54d3
 
-PODFILE CHECKSUM: de67688b26cdd96a9af616ddf7aac114a060f37b
+PODFILE CHECKSUM: 69f4e57d3f07d43022bbbe3855dfc266da88332b
 
 COCOAPODS: 1.2.0
